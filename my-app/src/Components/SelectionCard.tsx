@@ -19,10 +19,7 @@ const SelectionCard: React.FC<SelectionCardProps> = ({ title, items, onClose, on
     return (
         <div className="fixed inset-0 flex items-center justify-center bg-opacity-50 backdrop-blur-sm">
             <div className="bg-neutral-800 text-white p-6 rounded-lg shadow-lg w-96">
-                <div className="flex justify-between items-center mb-4">
-                    <h2 className="text-lg font-semibold">{title}</h2>
-                    <button onClick={onClose} className="text-lg">✖</button>
-                </div>
+                <h2 className="text-lg font-semibold">{title}</h2>
                 <div className="grid grid-cols-2 gap-3">
                     {items.map((item) => (
                         <button
